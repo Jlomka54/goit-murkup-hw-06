@@ -616,7 +616,7 @@ button {
   margin-left: 16px;
 }
 /* ========= MODAL OWERLEY============= */
-/* .modal-owerlay {
+.modal-owerlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -798,4 +798,4 @@ button {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-} */
+}
