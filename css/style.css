@@ -13,6 +13,7 @@ button {
   cursor: pointer;
 }
 ul {
+  list-style-type: none;
   margin: 0;
   padding-left: 0;
 }
@@ -24,10 +25,11 @@ body {
   font-optical-sizing: auto;
   color: #2e2f42;
   background-color: #ffffff;
+  max-width: 320px;
 }
 
 .container {
-  width: 1158px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
 }
@@ -41,11 +43,43 @@ button {
   font-family: inherit;
   line-height: inherit;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1158px) {
+}
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../images/hero/people-office@2x-min.jpg);
+  }
+}
 /* ===== HEADER ======== */
 .header-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 16px;
+}
+.header-container::after {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  content: "";
+  width: 288px;
+  height: 9px;
+  background-color: #d9d9d9;
 }
 .page-header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -69,7 +103,7 @@ button {
   margin-right: 76px;
 }
 .header-navigation-list {
-  display: flex;
+  display: none;
   gap: 40px;
   margin-right: 332px;
 }
@@ -88,6 +122,10 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+}
+.button-menu {
+  border: none;
+  background-color: #ffffff;
 }
 .header-link {
   display: flex;
@@ -141,6 +179,7 @@ button {
   color: #404bbf;
 }
 .header-contacts-link {
+  display: none;
   font-style: normal;
 }
 .contacts-link {
@@ -158,12 +197,8 @@ button {
   color: #404bbf;
 }
 
-ul {
-  list-style-type: none;
-}
-
 /* ======== HERO ======= */
-.hero {
+/* .hero {
   background-color: #2e2f42;
   padding: 188px 0;
   background-image: linear-gradient(
@@ -174,16 +209,34 @@ ul {
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
-  max-width: 1440px;
+  width: 320px;
+  height: 432px;
+  background-position: center;
+  background-size: 320px 432px;
+} */
+.hero {
+  background-color: #2e2f42;
+  padding: 72px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/people-office.jpg);
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  max-width: 320px;
+  max-height: 432px;
   background-position: center;
   background-size: cover;
 }
 .hero-title {
+  margin: 0 auto;
   font-weight: 700;
-  margin: 0 auto 48px;
-  max-width: 496px;
-  font-size: 56px;
-  line-height: 1.07;
+  margin-bottom: 72px;
+  max-width: 216px;
+  font-size: 36px;
+  line-height: 1.11111;
   text-align: center;
   color: #fff;
   letter-spacing: 0.02em;
@@ -212,22 +265,11 @@ ul {
 }
 
 /* ======== Innovation ======= */
-.innovation {
+/* .innovation {
   display: flex;
   padding: 120px 0;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 .innovation-title {
   font-size: 56px;
   font-size: 20px;
@@ -268,10 +310,10 @@ ul {
   justify-content: center;
   align-items: center;
   margin-bottom: 8px;
-}
+} */
 
 /* ======= TEAM ======= */
-.page-team {
+/* .page-team {
   background: #f4f4fd;
   padding: 120px 0;
 }
@@ -348,6 +390,7 @@ ul {
   background-color: #404bbf;
 }
 /* ======== Our Portfolio ======== */
+/* 
 .our-portfolio {
   background-color: #ffffff;
   padding: 120px 0;
@@ -423,9 +466,9 @@ ul {
 
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
+}  */
 /* ======== FOOTER ======= */
-.page-footer {
+/* .page-footer {
   display: flex;
   justify-content: flex-start;
   background: #2e2f42;
@@ -552,9 +595,9 @@ ul {
 }
 .button-svg-icon {
   margin-left: 16px;
-}
+} */
 /* ========= MODAL OWERLEY============= */
-.modal-owerlay {
+/* .modal-owerlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -736,4 +779,4 @@ ul {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-}
+} */
