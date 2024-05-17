@@ -186,13 +186,28 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/people-office.jpg);
+    url(../images/hero/people-office-mobile.jpg);
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
-  max-width: 1440px;
+  max-width: 320px;
   background-position: center;
   background-size: cover;
+}
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-mobile@2x.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    max-width: 640px;
+    background-position: center;
+    background-size: cover;
+  }
 }
 .hero-title {
   margin: 0 auto;
@@ -896,9 +911,25 @@ button {
   }
 
   /* ========= HERO ========= */
+
   .hero {
     padding: 112px 0;
-    width: 100%;
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-table.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .hero {
+      max-width: 1536px;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-table@2x.jpg);
+    }
   }
   .hero-title {
     min-width: 496px;
@@ -1001,6 +1032,22 @@ button {
   /* ========= HERO ========= */
   .hero {
     padding: 188px 0;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-desktop.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .hero {
+      max-width: 2880px;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-desktop@2x.jpg);
+    }
   }
   /* ========= INNOVATION ========= */
   .innovation {
@@ -1065,20 +1112,5 @@ button {
   }
   .social-media-container {
     margin-right: 80px;
-  }
-}
-@media (min-resolution: 192dpi) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero/people-office@2x-min.jpg);
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    max-width: 2880px;
-    background-position: center;
-    background-size: cover;
   }
 }
